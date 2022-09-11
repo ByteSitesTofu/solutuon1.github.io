@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <script src="https://kit.fontawesome.com/65eecd64a8.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Montserrat:ital,wght@0,600;1,100&display=swap');
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-color: hsl(30, 38%, 92%);
+      padding-top: 20px;
+      padding-left: 400px;
+      width: 1440px;
+    }
+
+    .pic{
+      background-color: white;
+      align-items: center;
+      padding: 0px;
+      width: 40%;
+      height: 450px;
+      border-radius: 10px;
+    }
+
+    .pic img{
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 50%;
+      height: 450px;
+    }
+    
+    .des{
+      float: right;
+      margin-right: 5%;
+    }
+
+    .prod-title, .prod-des{
+      font-family: 'Montserrat', sans-serif;
+      font-size: small;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .prod-title{
+      letter-spacing: 3px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .prod-name, .prod-price{
+      font-family: 'Fraunces', serif;
+      font-size: 40px;
+      margin: 0%;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .prod-des{
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    .prod-price{
+      color: rgb(63,162,79);
+    }
+
+    .prod-cart{
+      background-color:rgb(63,162,79);
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      position: relative;
+      display: inline-block;
+      border-radius: 10px;
+      width: 220px;
+      height: 50px;
+      margin-top: 10px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      border-style: none;
+      cursor: pointer;
+    }
+
+    .prod-cart:hover{
+      background-color: rgb(101, 206, 118);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="pic">
+    <img src="images/image-product-desktop.jpg" alt="">
+    <div class="des">
+      <p class="prod-title">PERFUME</p>
+      <p class="prod-name">Gabrielle <br> Essence Eau <br> De Parfum</p>
+      <p class="prod-des">A floral, solar and voluptuous <br> interpretation composed by <br> Olivier Polge, Perfumer-Creator <br> for the House of CHANEL.</p>
+      <p class="prod-price">$149.99 </p>
+      <button class="prod-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kaito</a>.
+  </div>
+</body>
+</html>
